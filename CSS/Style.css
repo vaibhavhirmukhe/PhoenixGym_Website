@@ -1,0 +1,343 @@
+/* Body */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    top:0px;
+    position:sticky;
+    align-items: center;
+    background-color: black;
+    z-index: 5;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation bar logo */
+#logo img{
+    height: 60px;
+    width: 60px;
+    margin: 4px 34px;
+    border-radius: 40px;
+}
+/* Navigation bar logo heading */
+#logo h3{
+    font-family: 'Sarabun', sans-serif;
+    text-align: center;
+    margin: 0px 8px;
+    color: white;
+}
+/* Navigation bar list styling */
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#navbar li a{
+    font-family: 'Sarabun', sans-serif;
+    color: white;
+    display: block;
+    margin: 8px;
+    padding: 8px 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+}
+#navbar li a:hover{
+    text-decoration: underline;
+}
+#Search-box{
+    position: absolute;
+    right: 48px;
+    top: 20px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border:2px solid black;
+    width: 250px;
+}
+
+#search-icon{
+    color: black;
+    position: absolute;
+    right: 58px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 15px;
+}
+.line{
+    width: 25px;
+    background-color: white;
+    height: 2px;
+    margin: 5px 3px;
+}
+
+/* Home section */
+
+#home{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 525px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+#home::before{
+    content: "";
+    background: url("../img/bg.jpg") no-repeat top center/cover;
+    position: absolute;
+    height: 530px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.93;
+}
+
+#home p{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.1rem;
+}
+
+#btn1:hover{
+    color: black;
+    background-color: white;
+    /* font-size: 20px; */
+    font-weight: bold;
+}
+
+/* Body section */
+
+#body{
+    color: white;
+    display: flex;
+    position: relative;
+    margin:30px auto;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 95%;
+    height: 500px;
+}
+#left{
+    background: url("../img/body.jpg") no-repeat center center/cover;
+    position: absolute;
+    z-index: 1;
+    height: 420px;
+    width: 33%;
+    top: 40px;
+    left: 30px;
+    border-radius: 10px;
+    /* opacity: 0.9; */
+}
+#right{
+    color: black;
+    background-color:rgb(146, 142, 142);
+    position: absolute;  
+    right: 15px; 
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 500px;
+    justify-content: center;
+    border-radius: 10px;
+}
+.Content{
+    padding-right:10px ;
+    padding-left:200px ;
+}
+.Content p{
+    font-family: 'Sarabun', sans-serif;
+    padding: 10px 40px 10px 90px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Services section */
+
+/* #services-container{
+    background-color: grey;
+} */
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+/* #services-container h1{
+     text-shadow: 3px 3px 3px rgb(150, 144, 144); 
+   
+} */
+.box{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 350px;
+    width: 400px;
+    margin: 2px 20px;
+    padding: 10px 10px ;
+    box-shadow: 4px 6px 2px rgb(150, 144, 144);
+}
+.box p{
+    color: white;
+    font-size: 1.05rem;
+}
+
+.box a{
+    font-family: 'Sarabun', sans-serif;
+    border: 2px solid white;
+    color: white;
+    display: block;
+    margin: 15px;
+    padding: 8px 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.box a:hover{
+    color: black;
+    background-color: white;
+    font-weight:bolder;
+}
+#box-1{
+    background: url("../img/services_bg1.jpg") no-repeat center center/cover;
+    opacity: 0.89;
+}
+#box-2{
+    background: url("../img/services_bg2.jpg") no-repeat center center/cover;
+    opacity: 0.89;
+}
+#box-3{
+    background: url("../img/services_bg3.jpg") no-repeat center center/cover;
+    opacity: 0.89;
+}
+
+/* Membership Container */
+#Membership-container{
+    margin-top: 50px;
+    /* padding: 30px 300px; */
+}
+#Membership-container::before{
+    content:"";
+    position: absolute;
+    height: 620px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.82;
+    background:url("../img/bg_1.jpg") no-repeat center center/cover;
+}
+
+.form{
+    width : 420px;
+    padding: 10px;
+}
+#contact-box{
+    font-family: 'Sarabun', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 366px;
+}
+#contact-box input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px 6px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+#contact-box label{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* footer section */
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding:6px 20px;
+    margin: 0px;
+}
+#icon{
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+    position: absolute;
+    right: 20px;
+}
+
+/* Utility classes */
+.h1-primary{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 3rem;
+    padding: 16px 16px ;
+    text-shadow: 3px 4px 3px rgb(85, 83, 83);
+}
+.h2-secondary{
+    /* color: white; */
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.5rem;
+    padding: 20px 16px ;
+}
+.h3-Third{
+    /* color: white; */
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.5rem;
+    padding: 8px 16px ;
+}
+.text-center{
+    text-align: center;
+}
+.btn{
+    font-family: 'Sarabun', sans-serif;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 19px;
+    margin: 15px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    /* font-size: 20px; */
+    font-weight: bold;
+}
